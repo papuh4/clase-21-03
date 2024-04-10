@@ -1,0 +1,213 @@
+/* * nos indica que este estilo será aplicado a toda la página */
+*{
+    margin:0;
+    padding:0;
+}
+/* cuando se utiliza una etiqueta para asignar estilos, todas las etiquetas tendrán
+ese estilo */
+h1{
+    color:blue;
+}
+/* # se utiliza para asignar estilos por id (atributo de los tag html) */
+#titulo2{
+    color: crimson;
+}
+/* . se utiliza para asignar estilos por class (atributo de los tag html) */
+.text-center{
+    text-align: center;
+}
+/* con . para clases asignar color de fondo al header */
+.fondo{
+    /* background-color sirve para el color de fondo */
+    /* background-color: blanchedalmond; */
+    background-image: linear-gradient(rgba(120, 120, 154, 0.9),rgba(40, 117, 164, 0.9)),
+             url("img/img-header.webp")
+       ;
+    /* no se repite la imagen */
+    background-repeat: no-repeat;
+    /* cubre todo el contenedor */
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;    
+
+}
+/* centrado y color de las letras del titulo */
+.texto-fondo{
+    height: 350px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-50{
+    font-size: 50px;
+    text-shadow: 0 0 10px white;
+
+}
+.texto-40{
+    font-size: 40px;
+    text-shadow: 0 0 10px black;
+}
+.info{
+    background-color:mediumslateblue;
+}
+.contenedor{
+    width: 90%;
+    padding: 80px 0;
+    margin: auto;
+    text-align: left;
+}
+.titulo-info{
+    font-size: 35px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+.parrafo{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.contenedor-cartas{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+.card{
+    box-shadow: 0 0 5px black;
+    width: 30%;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.6s;
+    border-radius: 15px;
+    background-color: antiquewhite;
+
+}
+/*hover se aplica cuando pase el cursor sobre el estilo*/
+.card:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.card p{
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.card i{
+    font-size: 50px;
+    color: black;
+    margin:30px;
+}
+
+.boton{
+    background-color: mediumslateblue;
+    color: white;
+    padding: 20px 10px;
+    border: 1px solid black;
+    margin-bottom: 30px;
+    width: 200px;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    
+}   
+.margen-icon{
+    margin-top: 25px;
+}
+.boton:hover{
+    background-color: grey;
+    color: white;
+
+}
+.galeria{
+    background-color: mediumslateblue;
+}
+.contenedor-galeria{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;   
+}
+.contenedor-galeria img{
+    width: 30%;
+    margin-bottom: 30px;
+    box-shadow: 0 0 15px black;
+    cursor: pointer;
+}
+.menu{
+    list-style: none;
+    background-color: rgb(219, 108, 108);
+    width: 100%;
+    /*position: fixed;*/
+    overflow: auto;
+
+}
+.menu li{
+    float: left;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.menu li:hover{
+    background-color:white;
+    transform: scale(1);
+    transition: 0.6s;
+}
+.menu li a:hover{
+    color: blueviolet;
+}
+
+.contacto{
+    background-color: aquamarine;
+    text-shadow: 0 0 5px black;
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.input{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    border: 2px solid;
+    padding: 20px 10px;
+    font-size: 20px;
+    color: white;
+}
+.input-ancho{
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.textarea-ancho{
+    width: 98%;
+    margin-bottom: 30px;
+}
+.input::placeholder{
+    color: azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fondo-footer{
+    background-color: blanchedalmond;
+    
+    text-shadow: 0 0 5px blueviolet;
+}
